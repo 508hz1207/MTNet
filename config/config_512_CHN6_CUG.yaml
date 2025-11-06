@@ -1,0 +1,42 @@
+DATASET: 'CHN6_CUG'
+#DATASET: 'DeepGlobe'
+#DATASET: 'massachusetts' False
+DATA_FUSION_TYPE: 'I'
+LITTLE_DATA_TEST_CODE: False
+TRAIN_EPOCHS: 120
+BATCH_SIZE: 9
+
+BASE_LR: 0.001
+#loss function BCE or BCE and Dice
+USE_BCE_DICE: True
+
+PATCH_SIZE: 512
+DATA_WORKER_NUM: 1
+ENCODER_LR_FACTOR: 0.1
+
+USE_LGFF: True
+USE_VSSM_SS2D: True
+USE_SCATT: False
+USE_SCMA: True
+
+USE_RESENCODER_ADD_VITENCODER: True
+
+#the save path of prediction result
+ROAD_RESULT_PATH: 'CHN6_CUG/result/a_train_road_result'
+TRAIN_WEIGHT: 'CHN6_CUG/result/a_train_road_result/train_weight'
+
+
+LOAD_TOTAL_WEIGHT: False
+LOAD_TOTAL_WEIGHT_PATH: 'CHN6_CUG/result/a_train_road_result/train_weight/epoch-9-f10.00.ckpt'
+LOAD_OPT_SCH: False
+
+SAM_VERSION: 'vit_b'
+SAM_CKPT_PATH: 'pretrained_weight/sam_vit_b_01ec64.pth'
+
+
+INFER_BATCH_SIZE: 64
+SAMPLE_MARGIN: 0
+INFER_PATCHES_PER_EDGE: 16
+#inference heatmap in heatmap_Grad.py
+INFER_BATCH_SIZE_HEATMAP: 6
+
