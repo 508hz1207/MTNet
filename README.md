@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# MTNet
-=======
 1. Required libraries:
 (1) an Nvidia GPU with latest CUDA and driver.
 (2) the latest pytorch
@@ -19,4 +16,4 @@ go to run CHN6_CUG/metric_evaluation.py
 
 5. Other Notes:
 The PWRoad , a multi-source data fusion dataset designed for general road extraction scenarios, will be released later. In addition, a new dataset named INRoad, focusing on typical urban complex overpass scenarios and also constructed based on multi-source data fusion, will be introduced. Meanwhile, the complete code will be open-sourced as well.
->>>>>>> 2ab47c9 (Initial commit)
+
